@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>DesignerCTY</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="header__logo">
+              <img src="images/logo.png" alt="DesingerCTY" />
+            </div>
+          </div>
+          <div class="col-7">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <!-- toggler icon -->
+                  <img src="images/icons/toggler-icon.svg" alt="" />
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Eid Sale</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Brands</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Men</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Women</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="col-2">
+            <div class="header__icon">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a class="nav-link" href="#"
+                    ><img
+                      src="images/icons/search.svg"
+                      class="header__icon--sm"
+                      alt="search"
+                    />
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link" href="#"
+                    ><img
+                      src="images/icons/user.svg"
+                      class="header__icon--sm"
+                      alt="user"
+                  /></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link" href="#"
+                    ><img
+                      src="images/icons/cart.svg"
+                      class="header__icon--sm"
+                      alt="cart"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /.header -->
+
+    <section id="slider" class="mb-5">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/slider/slider.svg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h1 class="carousel-title">Empowering Brands</h1>
+              <p class="carousel-sub-title">
+                Presenting the First Designer Marketplace in South Asia
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/slider/slider.svg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h1 class="carousel-title">Empowering Brands</h1>
+              <p class="carousel-sub-title">
+                Presenting the First Designer Marketplace in South Asia
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/slider/slider.svg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h1 class="carousel-title">Empowering Brands</h1>
+              <p class="carousel-sub-title">
+                Presenting the First Designer Marketplace in South Asia
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /. Hero slider -->
+
+    <section class="product-carousel mb-5">
+      <div class="container">
+        <div class="product-carousel__header mb-sm-4">
+          <h2 class="product-carousel__title">Menswear</h2>
+          <a class="product-carousel__see-all" href="#">See all</a>
+        </div>
+        <div class="product-carousel__body">
+          <div class="splide" data-splide='{"type":"loop","perPage":4}'>
+            <div class="splide__track">
+              <div class="row splide__list">
+                <div class="col-12 col-sm-3 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <h5 class="product__title">Shirt</h5>
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="#" class="product__shop-now">Shop Now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-3 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <h5 class="product__title">Shirt</h5>
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="#" class="product__shop-now">Shop Now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-3 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <h5 class="product__title">Shirt</h5>
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="#" class="product__shop-now">Shop Now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-3 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <h5 class="product__title">Shirt</h5>
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="#" class="product__shop-now">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.product-carousel -->
+
+    <section class="product-carousel mb-5">
+      <div class="container">
+        <div class="product-carousel__header mb-sm-4">
+          <h2 class="product-carousel__title">Womenswear</h2>
+          <a class="product-carousel__see-all" href="#">See all</a>
+        </div>
+        <!-- /.product-carousel__header -->
+        <div class="product-carousel__body">
+          <div class="splide" data-splide='{"type":"loop","perPage":4}'>
+            <div class="splide__track">
+              <div class="row splide__list">
+                <div class="col-12 col-sm-3 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <h5 class="product__title">Shirt</h5>
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/2.svg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="#" class="product__shop-now">Shop Now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-3 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <h5 class="product__title">Shirt</h5>
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/2.svg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="#" class="product__shop-now">Shop Now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-3 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <h5 class="product__title">Shirt</h5>
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/2.svg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="#" class="product__shop-now">Shop Now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-3 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <h5 class="product__title">Shirt</h5>
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/2.svg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="#" class="product__shop-now">Shop Now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-3 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <h5 class="product__title">Shirt</h5>
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/2.svg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="#" class="product__shop-now">Shop Now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-3 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <h5 class="product__title">Shirt</h5>
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/2.svg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="#" class="product__shop-now">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /.splide__list -->
+            </div>
+            <!-- /.splide__track -->
+          </div>
+          <!-- /.splide -->
+        </div>
+        <!-- .product-carousel__body -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.product-carousel -->
+
+    <section class="brand mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-4">
+            <h3 class="brand__title">Brands</h3>
+            <p class="brand__description">
+              You can shop by Brands.
+              <br />
+              We provide the best collection.
+            </p>
+          </div>
+          <!-- /.col-4-->
+          <div class="col-12 col-sm-8">
+            <div class="brand__category">
+              <button class="btn brand__btn" data-target="mens">Mens</button>
+              <button class="btn brand__btn" data-target="womens">
+                Womens
+              </button>
+              <button class="btn brand__btn" data-target="kids">Kids</button>
+              <button class="btn brand__btn" data-target="home">Home</button>
+            </div>
+            <div class="splide" data-splide='{"isBrand":true}'>
+              <div class="splide__track">
+                <div class="row brand__item splide__list">
+                  <div class="col-3 splide__slide" data-item="mens">
+                    <div class="brand__logo">
+                      <a href="#"
+                        ><img
+                          class="brand__logo--squre"
+                          src="images/brands/1.png"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col-3 splide__slide" data-item="mens">
+                    <div class="brand__logo">
+                      <a href="#"
+                        ><img
+                          class="brand__logo--squre"
+                          src="images/brands/1.png"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col-3 splide__slide" data-item="womens">
+                    <div class="brand__logo">
+                      <a href="#"
+                        ><img
+                          class="brand__logo--squre"
+                          src="images/brands/1.png"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col-3 splide__slide" data-item="womens">
+                    <div class="brand__logo">
+                      <a href="#"
+                        ><img
+                          class="brand__logo--squre"
+                          src="images/brands/1.png"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col-3 splide__slide" data-item="kids">
+                    <div class="brand__logo">
+                      <a href="#"
+                        ><img
+                          class="brand__logo--squre"
+                          src="images/brands/1.png"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col-3 splide__slide" data-item="kids">
+                    <div class="brand__logo">
+                      <a href="#"
+                        ><img
+                          class="brand__logo--squre"
+                          src="images/brands/1.png"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col-3 splide__slide" data-item="kids">
+                    <div class="brand__logo">
+                      <a href="#"
+                        ><img
+                          class="brand__logo--squre"
+                          src="images/brands/1.png"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col-3 splide__slide" data-item="home">
+                    <div class="brand__logo">
+                      <a href="#"
+                        ><img
+                          class="brand__logo--squre"
+                          src="images/logo.png"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col-3 splide__slide" data-item="home">
+                    <div class="brand__logo">
+                      <a href="#"
+                        ><img
+                          class="brand__logo--squre"
+                          src="images/logo.png"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col-3 splide__slide" data-item="home">
+                    <div class="brand__logo">
+                      <a href="#"
+                        ><img
+                          class="brand__logo--squre"
+                          src="images/logo.png"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col-3 splide__slide" data-item="home">
+                    <div class="brand__logo">
+                      <a href="#"
+                        ><img
+                          class="brand__logo--squre"
+                          src="images/logo.png"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-8 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.brand -->
+
+    <section class="just-for-you product-carousel mb-5">
+      <div class="container">
+        <div class="product-carousel__header mb-sm-4">
+          <h2 class="product-carousel__title">Just For You</h2>
+          <a class="product-carousel__see-all" href="#">See all</a>
+        </div>
+        <!-- /.product-carousel__header -->
+        <div class="product-carousel__body">
+          <div class="splide" data-splide='{"type":"loop","perPage":3}'>
+            <div class="splide__track">
+              <div class="row splide__list">
+                <div class="col-12 col-sm-4 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/3.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <h5 class="product__title">Feather Light Pro</h5>
+                    <h6 class="product__price">BDT 2,750</h6>
+                    <div class="product__size">
+                      <label for="" class="form-label">Select size</label>
+                      <div class="col-auto">
+                        <select
+                          class="form-select col-3 form-select-sm"
+                          aria-label="38"
+                          id=""
+                        >
+                          <option value="1">38</option>
+                          <option value="2">42</option>
+                          <option value="3">44</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="product__btn">
+                      <a href="javascript:void(0)" class="btn">See Details</a>
+                      <a href="javascript:void(0)" class="btn">Add to Cart</a>
+                    </div>
+                    <!-- /.product__btn -->
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/2.svg"
+                        alt=""
+                      />
+                    </div>
+                    <h5 class="product__title">Feather Light Pro Sneakers</h5>
+                    <h6 class="product__price">BDT 2,750</h6>
+                    <div class="product__size">
+                      <label for="" class="form-label">Select size</label>
+                      <div class="col-auto">
+                        <select
+                          class="form-select col-3 form-select-sm"
+                          aria-label="38"
+                          id=""
+                        >
+                          <option value="1">38</option>
+                          <option value="2">42</option>
+                          <option value="3">44</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="product__btn">
+                      <a href="javascript:void(0)" class="btn">See Details</a>
+                      <a href="javascript:void(0)" class="btn">Add to Cart</a>
+                    </div>
+                    <!-- /.product__btn -->
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/2.svg"
+                        alt=""
+                      />
+                    </div>
+                    <h5 class="product__title">Feather Light Pro Sneakers</h5>
+                    <h6 class="product__price">BDT 2,750</h6>
+                    <div class="product__size">
+                      <label for="" class="form-label">Select size</label>
+                      <div class="col-auto">
+                        <select
+                          class="form-select col-3 form-select-sm"
+                          aria-label="38"
+                          id=""
+                        >
+                          <option value="1">38</option>
+                          <option value="2">42</option>
+                          <option value="3">44</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="product__btn">
+                      <a href="javascript:void(0)" class="btn">See Details</a>
+                      <a href="javascript:void(0)" class="btn">Add to Cart</a>
+                    </div>
+                    <!-- /.product__btn -->
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/3.png"
+                        alt=""
+                      />
+                    </div>
+                    <h5 class="product__title">Feather Light Pro Sneakers</h5>
+                    <h6 class="product__price">BDT 2,750</h6>
+                    <div class="product__size">
+                      <label for="" class="form-label">Select size</label>
+                      <div class="col-auto">
+                        <select
+                          class="form-select col-3 form-select-sm"
+                          aria-label="38"
+                          id=""
+                        >
+                          <option value="1">38</option>
+                          <option value="2">42</option>
+                          <option value="3">44</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="product__btn">
+                      <a href="javascript:void(0)" class="btn">See Details</a>
+                      <a href="javascript:void(0)" class="btn">Add to Cart</a>
+                    </div>
+                    <!-- /.product__btn -->
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/3.png"
+                        alt=""
+                      />
+                    </div>
+                    <h5 class="product__title">Feather Light Pro Sneakers</h5>
+                    <h6 class="product__price">BDT 2,750</h6>
+                    <div class="product__size">
+                      <label for="" class="form-label">Select size</label>
+                      <div class="col-auto">
+                        <select
+                          class="form-select col-3 form-select-sm"
+                          aria-label="38"
+                          id=""
+                        >
+                          <option value="1">38</option>
+                          <option value="2">42</option>
+                          <option value="3">44</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="product__btn">
+                      <a href="javascript:void(0)" class="btn">See Details</a>
+                      <a href="javascript:void(0)" class="btn">Add to Cart</a>
+                    </div>
+                    <!-- /.product__btn -->
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4 splide__slide d-flex">
+                  <div class="product__item flex-fill">
+                    <div class="product__image">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/3.png"
+                        alt=""
+                      />
+                    </div>
+                    <h5 class="product__title">Feather Light Pro Sneakers</h5>
+                    <h6 class="product__price">BDT 2,750</h6>
+                    <div class="product__size">
+                      <label for="" class="form-label">Select size</label>
+                      <div class="col-auto">
+                        <select
+                          class="form-select col-3 form-select-sm"
+                          aria-label="38"
+                          id=""
+                        >
+                          <option value="1">38</option>
+                          <option value="2">42</option>
+                          <option value="3">44</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="product__btn">
+                      <a href="javascript:void(0)" class="btn">See Details</a>
+                      <a href="javascript:void(0)" class="btn">Add to Cart</a>
+                    </div>
+                    <!-- /.product__btn -->
+                  </div>
+                </div>
+              </div>
+              <!-- /.splide__list -->
+            </div>
+            <!-- /.splide__track -->
+          </div>
+          <!-- /.splide -->
+        </div>
+        <!-- .product-carousel__body -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.just-for-you -->
+
+    <section class="deal-of-the-day mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h2 class="deal__title">Deal of The day</h2>
+          </div>
+          <div
+            class="col-sm-9 splide"
+            data-splide='{"type":"loop","perPage":2}'
+          >
+            <div class="splide__track">
+              <div class="row splide__list">
+                <div class="col-sm-6 splide__slide">
+                  <div class="product__details">
+                    <div class="product__img">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/4.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__footer">
+                      <h5 class="product__title">Feather Light Pro Sneakers Feather Light Pro Sneakers Feather Light Pro Sneakers Feather Light Pro Sneakers Feather Light Pro Sneakers </h5>
+                      <h6 class="product__price">BDT 2,750</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 splide__slide">
+                  <div class="product__details">
+                    <div class="product__img">
+                      <img
+                        class="product__image--squre"
+                        src="images/products/4.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__footer">
+                      <h5 class="product__title">Feather Light Pro Sneakers</h5>
+                      <h6 class="product__price">BDT 2,750</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.deal-of-the-day -->
+
+    <section class="highlighted-for-you product-carousel mb-5">
+      <div class="container">
+        <div class="product-carousel__header mb-sm-4">
+          <h2 class="product-carousel__title">Highlighted For You</h2>
+          <a class="product-carousel__see-all" href="#">See all</a>
+        </div>
+        <!-- /.product-carousel__header -->
+        <div class="product-carousel__body">
+          <div class="row">
+            <div class="col-12 col-sm-3 d-flex">
+              <div class="product__item flex-fill">
+                <div class="product__image">
+                  <img
+                    class="product__image--squre"
+                    src="images/products/3.png"
+                    alt=""
+                  />
+                </div>
+
+                <h5 class="product__title">Luxury Bags</h5>
+                <h6 class="product__price">BDT 2,750
+                  <span class="product__old-price">BDT 1950</span>
+                  <span class="product__discount">25% OFF</span>
+                </h6>
+                </h6>
+                <div class="review__icon">
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star"></i>
+                </div>
+                <!-- /.review__icon -->
+              </div>
+            </div>
+            <div class="col-12 col-sm-3 d-flex">
+              <div class="product__item flex-fill">
+                <div class="product__image">
+                  <img
+                    class="product__image--squre"
+                    src="images/products/2.svg"
+                    alt=""
+                  />
+                </div>
+                <h5 class="product__title">Luxury Bags</h5>
+                <h6 class="product__price">BDT 2,750
+                  <span class="product__old-price">BDT 1950</span>
+                  <span class="product__discount">25% OFF</span>
+                </h6>
+                </h6>
+                <div class="review__icon">
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star"></i>
+                </div>
+                <!-- /.review__icon -->
+              </div>
+            </div>
+            <div class="col-12 col-sm-3 d-flex">
+              <div class="product__item flex-fill">
+                <div class="product__image">
+                  <img
+                    class="product__image--squre"
+                    src="images/products/2.svg"
+                    alt=""
+                  />
+                </div>
+                <h5 class="product__title">Luxury Bags</h5>
+                <h6 class="product__price">BDT 2,750
+                  <span class="product__old-price">BDT 1950</span>
+                  <span class="product__discount">25% OFF</span>
+                </h6>
+                </h6>
+                <div class="review__icon">
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star"></i>
+                </div>
+                <!-- /.review__icon -->
+              </div>
+            </div>
+            <div class="col-12 col-sm-3 d-flex">
+              <div class="product__item flex-fill">
+                <div class="product__image">
+                  <img
+                    class="product__image--squre"
+                    src="images/products/3.png"
+                    alt=""
+                  />
+                </div>
+                <h5 class="product__title">Luxury Bags</h5>
+                <h6 class="product__price">
+                  BDT 2,750
+                  <span class="product__old-price">BDT 1950</span>
+                  <span class="product__discount">25% OFF</span>
+                </h6>
+                <div class="review__icon">
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star"></i>
+                </div>
+                <!-- /.product__btn -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .product-carousel__body -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.highlighted-for-you -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.1.2/dist/js/splide-extension-grid.min.js"></script>
+
+    <script>
+      // get all splide classes
+      const sortBtn = document.querySelector(".brand__category").children;
+      const sortItem = document.querySelector(".brand__item").children;
+      let brandSplide;
+
+      let elms = document.getElementsByClassName("splide");
+      for (let i = 0, len = elms.length; i < len; i++) {
+        let splide = new Splide(elms[i]).mount();
+        splide.options = {
+          breakpoints: {
+            640: {
+              perPage: 2,
+              loop: false,
+            },
+          },
+        };
+        splide.mount();
+        if (splide.options.isBrand) {
+          splide.options = {
+            type: "loop",
+            perPage: 1,
+            perMove: 1,
+            grid: {
+              rows: 2,
+              cols: 4,
+              gap: {
+                row: "1rem",
+                col: "1rem",
+              },
+            },
+          };
+          brandSplide = splide.mount(window.splide.Extensions);
+
+          // brandSlides = splide;
+        }
+      }
+
+      console.log(sortItem);
+
+      // Brand filer selection
+
+      for (let i = 0; i < sortBtn.length; i++) {
+        sortBtn[i].addEventListener("click", function () {
+          for (let j = 0; j < sortBtn.length; j++) {
+            sortBtn[j].classList.remove("current");
+          }
+
+          this.classList.add("current");
+
+          let targetData = this.getAttribute("data-target");
+
+          for (let k = 0; k < sortItem.length; k++) {
+            sortItem[k].classList.remove("active");
+            sortItem[k].classList.add("delete");
+
+            if (
+              sortItem[k].getAttribute("data-item") == targetData ||
+              targetData == "all"
+            ) {
+              sortItem[k].classList.remove("delete");
+              sortItem[k].classList.add("active");
+            }
+          }
+        });
+      }
+
+      console.dir(brandSplide);
+    </script>
+  </body>
+</html>

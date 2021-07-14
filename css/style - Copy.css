@@ -1,0 +1,202 @@
+/* Custom Web Fonts - ProximaNova */
+@import "/fonts/fonts.css";
+
+:root {
+  --color-primary: #c09451;
+  --color-secondary: #002742;
+  --color-danger: #b90101;
+  --color-warning: #bababa;
+  --color-border: #e0e0e0;
+  --font-proxima-nova: "ProximaNova";
+  --font-proxima-nova-bold: "ProximaNova-Bold";
+  --font-proxima-nova-thin: "ProximaNova-Thin";
+}
+
+/* 
+Font size converted to rem
+10px = 62.5% 
+10pt = 83.33%  
+*/
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: #000;
+}
+
+body {
+  font-family: var(--font-proxima-nova);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+}
+
+/* Header Section  */
+.header {
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  align-items: center;
+}
+.header__logo {
+  padding-top: 0.5rem;
+}
+.navbar-light .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0);
+}
+.navbar {
+  padding-top: 0.7rem;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 1);
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(0, 0, 0, 1);
+}
+.navbar-nav {
+  font-size: 1.4rem;
+}
+.navbar-nav .nav-link {
+  padding-left: 1.5rem !important;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.header__icon {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+}
+.header__icon .list-inline-item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.header__icon--sm {
+  width: 14px;
+  height: 14px;
+}
+
+/* Slider Section  */
+.carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.carousel-caption {
+  font-style: var(--font-proxima-nova-bold);
+  position: absolute;
+  right: 15%;
+  bottom: 1.5rem;
+  left: 7%;
+  padding-top: 0;
+  padding-bottom: 2rem;
+  color: #fff;
+  text-align: left;
+}
+.carousel-title {
+  font-size: 4rem;
+  line-height: 1.5;
+}
+.carousel-sub-title {
+  font-size: 1.4rem;
+  letter-spacing: 0.14rem;
+}
+
+/* Product Carousel Section  */
+.product-carousel__header {
+  display: flex;
+  justify-content: space-between;
+}
+.product-carousel__title {
+  font-family: var(--font-proxima-nova-bold);
+  font-size: 3rem;
+  color: var(--color-primary);
+}
+.product-carousel__see-all {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  padding-top: 1.5rem;
+}
+.product__item {
+  display: flex !important;
+  flex-direction: column;
+  color: var(--color-secondary);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 11%);
+}
+.product__title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-bottom: 1.3rem;
+}
+.product__shop-now {
+  align-self: flex-end;
+  font-size: 1.2rem;
+  padding-top: 1.3rem;
+}
+.product__image {
+  border-radius: 15%;
+  padding: 100% 0 0 0;
+  position: relative;
+}
+.product__image--squre {
+  position: absolute;
+  top: 0;
+}
+
+/* owl carousel  */
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+  position: relative;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: rgba(255, 255, 255, 0);
+}
+.owl-theme .owl-nav [class*="owl-"] {
+  background: rgba(255, 255, 255, 0);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.owl-carousel .owl-stage-outer {
+  overflow-x: clip;
+  overflow-y: visible;
+}
+.owl-theme .owl-nav {
+  margin-top: 0;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+.owl-nav .d-flex {
+  justify-content: space-between;
+}
+.owl-prev {
+  margin-left: -25px !important;
+}
+.owl-next {
+  margin-right: -12px !important;
+}
