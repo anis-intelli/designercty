@@ -298,7 +298,7 @@ body {
 .deal-of-the-day {
   background: url(../images/banner/deal-banner.png) center no-repeat;
   background-color: rgba(0, 0, 0, 11%);
-  padding: 50px 0;
+  padding: 50px 0 0 0;
 }
 .product__details {
   position: relative;
@@ -308,11 +308,18 @@ body {
   position: relative;
 }
 
+.deal-of-the-day .product__image--squre {
+  position: relative;
+  top: 0;
+  object-fit: cover;
+  left: 0;
+}
+
 .product__footer {
-  position: absolute;
+  position: inherit;
   left: 18px;
   color: #fff;
-  bottom: -210px;
+  bottom: 50px;
   padding-right: 15px;
 }
 .product__footer .product__title {
